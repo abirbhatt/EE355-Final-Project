@@ -4,14 +4,19 @@
 
 #include <iostream>
 #include <string>
-// TODO: You may need to add other libraries here!
+#include <sstream>
+#include <cctype>
+
 using namespace std;
 
+typedef string dataType; 
 
 class Contact {
-    // TODO: private or protected? Look at your children!	
+    // TODO: private or protected? Look at your children!
+protected: 	
 	string type;
 public:
+    virtual ~Contact() {}
 	virtual void print() = 0;
     virtual string get_contact(string style="full") = 0;
 	virtual void set_contact() = 0;
@@ -24,6 +29,9 @@ private:
 public:
     Email(string type, string email_addr);
     // TODO: Complete me!
+    virtual void print(); 
+    virtual string get_contact(string style = "full");
+    virtual void set_contact();
 };
 
 
@@ -34,6 +42,9 @@ private:
 public:
     Phone(string type, string phone_number);
     // TODO: Complete me!
+    virtual void print();
+    virtual string get_contact(string style = "full");
+    virtual void set_contact();
 };
 
 #endif

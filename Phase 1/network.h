@@ -19,6 +19,8 @@ class Network{
         Network();
         Network(string fileName);
         ~Network();
+        void loadDB(string filename);
+        void saveDB(string filename);
         void printDB();
         void push_front(Person* newEntry);
         void push_back(Person* newEntry);

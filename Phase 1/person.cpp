@@ -1,5 +1,6 @@
 
 #include "person.h"
+#include "misc.h"
 
 Person::Person(){
     // I'm already done! 
@@ -155,4 +156,41 @@ void Person::print_person(){
 	birthdate->print_date("Month D, YYYY");
     phone->print();
     email->print();
+    for (int i = 0; i < myfriends.size(); i++) {
+        string code = CodeName(myfriends[i]->f_name, myfriends[i]->l_name);
+        cout << code << " (" << myfriends[i]->f_name << " " << myfriends[i]->l_name << ")" << endl;
+    }
+}
+void Person::makeFriend(Person* newFriend) { //phase 2
+    myfriends.push_back(newFriend);
+}
+void Person::print_friends(){
+    // Print this person's own name
+    cout << f_name << ", " << l_name << endl;
+    cout << "--------------------------------" << endl;
+
+    vector<Person*> sorted = myfriends;
+
+    // Sort by first two letters of each friend's code
+    for (int i = 0; i < sorted.size(); i++) {
+        for (int j = i + 1; j < sorted.size(); j++) {
+            string ci = CodeName(sorted[i]->f_name, sorted[i]->l_name);
+            string cj = CodeName(sorted[j]->f_name, sorted[j]->l_name);
+            bool swap = false;
+            if (ci[0] > cj[0]) {
+                swap = true;
+            } else if (ci[0] == cj[0] && ci[1] > cj[1]) {
+                swap = true;
+            }
+            if (swap) {
+                Person* tmp = sorted[i];
+                sorted[i] = sorted[j];
+                sorted[j] = tmp;
+            }
+        }
+    }
+    //Print
+    for (int i = 0; i < sorted.size(); i++) {
+        cout << sorted[i]->f_name << ", " << sorted[i]->l_name << endl;
+    }
 }

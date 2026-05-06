@@ -5,6 +5,8 @@
 #include "date.h"
 #include "contact.h"
 #include <fstream>
+#include <vector>
+
 
 class Person{
     friend class Network;
@@ -20,6 +22,7 @@ private:
     Person* prev;
 
 public: 
+    vector<Person*> myfriends;
     Person();
     ~Person();
     Person(string filename);
@@ -29,6 +32,8 @@ public:
 	void set_person(string filename);
     bool operator==(const Person& rhs);
     bool operator!=(const Person& rhs);
+    void makeFriend(Person* newFriend);
+    void print_friends();
 };
 
 

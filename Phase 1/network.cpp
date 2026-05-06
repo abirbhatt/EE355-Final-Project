@@ -195,6 +195,8 @@ void Network::showMenu(){
         cout << "3. Add a new person \n";
         cout << "4. Remove a person \n";
         cout << "5. Print people with last name  \n";
+        cout << "6. Connect \n"; //phase 2
+        cout << "7. Wise Search \n";
         cout << "\nSelect an option ... ";
         
         if (cin >> opt) {
@@ -298,7 +300,67 @@ void Network::showMenu(){
             }
             if (!any) cout << "Person not found! \n";
         }
-        
+        else if (opt == 6){
+            cout << "Make friends \n";
+            cout << "Person 1\n";
+            cout << "First Name: ";
+            std::getline(cin, fname);
+            cout << "Last Name: ";
+            std::getline(cin, lname);
+            Person* p1 = search(fname, lname);
+            if (p1 == NULL) {
+                cout << "Person not found \n";
+            } else {
+                string fname2, lname2;
+                cout << "Person 2\n";
+                cout << "First Name: ";
+                std::getline(cin, fname2);
+                cout << "Last Name: ";
+                std::getline(cin, lname2);
+                Person* p2 = search(fname2, lname2);
+                if (p2 == NULL) {
+                    cout << "Person not found \n";
+                } else {
+                    cout << "\n";
+                    p1->print_person();
+                    cout << "\n";
+                    p2->print_person();
+                    p1->makeFriend(p2);
+                    p2->makeFriend(p1);
+                }
+    }
+}
+        else if (opt == 7){
+            cout << "Wise Search \n";
+            cout << "Search By: \n";
+            string query;
+            std::getline(cin, query);
+
+            bool found = false;
+            Person* ptr = head;
+            while (ptr != NULL) {
+                bool match = false;
+                if (ptr->phone->get_contact().find(query) != string::npos) // check phone
+                    match = true;
+                if (ptr->email->get_contact().find(query) != string::npos)  // check email
+                    match = true;
+                if (ptr->birthdate->to_string().find(query) != string::npos) // check birthdate
+                    match = true;
+                if (ptr->f_name.find(query) != string::npos)
+                    match = true;
+                if (ptr->l_name.find(query) != string::npos)
+                    match = true;
+
+                if (match) {
+                    ptr->print_person();
+                    cout << "------------------------------" << endl;
+                    found = true;
+                }
+                ptr = ptr->next;
+            }
+            if (!found)
+                cout << "Person not found \n";
+        }
         else
             cout << "Nothing matched!\n";
         

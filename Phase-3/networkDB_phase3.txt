@@ -1,0 +1,150 @@
+Julia Scarlett Elizabeth
+Louis-Dreyfus
+1/13/1961
+(Gmail) something@email.com
+(Office) 310-291-7482
+college: USC
+major: Theater
+state: CA
+interest: acting
+--------------------
+Martin
+Van Nostrand
+07/24/1949
+(Yahoo) myemail@yahoo.com
+(Home) 224-432-5809
+college: UCLA
+major: Psychology
+state: NY
+interest: chess
+--------------------
+Truman
+Burbank
+1/17/1962
+(Official) document@info.edu
+(Work) 213-517-9989
+college: USC
+major: Film
+state: CA
+interest: photography
+--------------------
+George
+Costanza
+5/5/1965
+(Gmail) gcostanza@gmail.com
+(Cell) 212-555-0101
+college: Queens College
+major: Architecture
+state: NY
+interest: chess
+--------------------
+Elaine
+Benes
+1/13/1966
+(Work) elaine@pendant.com
+(Cell) 212-555-0187
+college: Tufts
+major: English
+state: NY
+interest: dancing
+--------------------
+Cosmo
+Kramer
+12/27/1954
+(Home) kramer@apt5b.com
+(Cell) 212-555-0199
+college: none
+major: none
+state: NY
+interest: cooking
+--------------------
+Jerry
+Seinfeld
+4/29/1954
+(Work) jerry@comedian.com
+(Cell) 212-555-0123
+college: Queens College
+major: Communications
+state: NY
+interest: chess
+--------------------
+Anne William
+Berton
+5/2/1999
+(USC) abert@usc.edu
+(Cell) 876-541-2345
+college: USC
+major: Electrical Engineering
+state: CA
+interest: robotics
+--------------------
+John Roy
+Arora
+9/29/1998
+(USC) aroraj@usc.edu
+(Cell) 648-729-7001
+college: USC
+major: Computer Science
+state: CA
+interest: robotics
+--------------------
+Tommy
+Trojan
+11/15/2000
+(USC) ttrojan@usc.edu
+(Cell) 310-000-1234
+college: USC
+major: Electrical Engineering
+state: CA
+interest: music
+--------------------
+Nayana
+Gupta
+3/8/2001
+(Gmail) ngupta@gmail.com
+(Cell) 310-555-9876
+college: USC
+major: Biomedical Engineering
+state: CA
+interest: hiking
+--------------------
+Amy
+Chang
+7/22/2000
+(USC) achang@usc.edu
+(Cell) 310-555-4321
+college: USC
+major: Electrical Engineering
+state: CA
+interest: robotics
+--------------------
+Adam
+Chandler
+8/14/1999
+(Work) achandler@eng.com
+(Cell) 424-555-7890
+college: UCLA
+major: Mechanical Engineering
+state: CA
+interest: music
+--------------------
+Karan
+Kapoor
+6/3/2000
+(Gmail) kkapoor@gmail.com
+(Cell) 310-888-1111
+college: USC
+major: Computer Science
+state: CA
+interest: hiking
+--------------------
+Katy
+Bruin
+10/10/2001
+(UCLA) kbruin@ucla.edu
+(Cell) 310-999-2222
+college: UCLA
+major: Electrical Engineering
+state: CA
+interest: music
+--------------------
